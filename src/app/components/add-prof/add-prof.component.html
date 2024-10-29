@@ -1,0 +1,59 @@
+
+<form>
+    <button class="close" mat-button mat-dialog-title (click)="closeDialog()">Close</button>
+
+    <table>
+        <tr>
+            <td>
+
+                <mat-form-field appearance="fill">
+
+                    <!-- <mat-label>Fill form field</mat-label> -->
+                    <input matInput [(ngModel)]="nom" name="nom" placeholder="Fill form field">
+                    <mat-hint>nom</mat-hint>
+
+
+                </mat-form-field>
+            </td>
+
+        </tr>
+        
+        <br>
+
+        <tr>
+            <td>
+
+                <mat-form-field appearance="fill">
+                    <!-- <mat-label>Fill form field</mat-label> -->
+                    <input matInput [(ngModel)]="prenom" name="prenom" placeholder="Fill form field">
+                    <mat-hint>prenom</mat-hint>
+
+                </mat-form-field>
+            </td>
+
+        </tr>
+        <br>
+        <tr>
+            <td>
+
+                <mat-form-field appearance="fill">
+                    <!-- <mat-label>Fill form field</mat-label> -->
+                    <input matInput [(ngModel)]="note" name="note" placeholder="Fill form field">
+                    <mat-hint>note</mat-hint>
+
+                </mat-form-field>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td><input type="reset" value="reset" name="" id=""> &nbsp;&nbsp;
+                <input type="submit" value="submit" (click)="ajouterPro()"></td>
+           
+
+        </tr>
+    </table>
+</form>
+
+
+

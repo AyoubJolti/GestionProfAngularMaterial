@@ -1,0 +1,30 @@
+<!-- <mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput  placeholder="Search columns" #input>
+</mat-form-field> -->
+
+<table mat-table [dataSource]="data" class="mat-elevation-z8">
+    <mat-text-column name="nom"></mat-text-column>
+    <mat-text-column name="prenom"></mat-text-column>
+    <mat-text-column name="note"></mat-text-column>
+    <mat-text-column name="ayoub" >hi</mat-text-column>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+
+  </table>
+  <!-- <mat-paginator [length]="100"
+      
+        [pageSizeOptions]="[5,10, 25, 100]"
+        showFirstLastButtons
+                 aria-label="Select page of periodic data">
+</mat-paginator> -->
+<mat-paginator #paginator
+  
+[pageSizeOptions]="[5,10, 25, 100]"
+showFirstLastButtons
+  
+aria-label="Select page">
+</mat-paginator>
+

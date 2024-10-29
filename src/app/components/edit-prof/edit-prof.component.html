@@ -1,0 +1,25 @@
+<form >
+    <h1>Edit Prof</h1>
+    <table>
+        <tr>
+            <td>name</td>
+            <td><input type="text" name="nom" [(ngModel)]="nom"></td>
+
+        </tr>
+        <tr>
+            <td>prenom</td>
+            <td><input type="text" name="prenom" [(ngModel)]="prenom"></td>
+
+        </tr>
+        <tr>
+            <td>specialite</td>
+            <td><input type="text" name="note" [(ngModel)]="note"></td>
+
+        </tr>
+        <tr>
+            <td><input type="reset" value="reset"  name="" id=""></td>
+            <td><input type="submit" value="submit" (click)="Edit()"></td>
+
+        </tr>
+    </table>
+</form>
